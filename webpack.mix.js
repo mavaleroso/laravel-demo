@@ -15,4 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .copy('node_modules/semantic-ui/dist/semantic.min.css','public/css/semantic.min.css')
     .copy('node_modules/semantic-ui/dist/semantic.min.js','public/js/semantic.min.js')
-    .copy('node_modules/semantic-ui/dist/themes/default/assets/fonts/icons.woff2', 'public/css/themes/default/assets/fonts/icons.woff2');
+    .copy('node_modules/semantic-ui/dist/themes/default/assets/fonts/icons.woff2', 'public/css/themes/default/assets/fonts/icons.woff2')
+    .copy('node_modules/jquery/dist/jquery.min.js', 'public/js/jquery.min.js');

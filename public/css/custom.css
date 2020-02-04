@@ -1,0 +1,10 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+}
+
+.dash-logs {
+    height: 80vh;
+    width: 100% !important;
+}
+

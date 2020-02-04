@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="ui segment">
-      <h1 class="ui header">My Friend</h1>
+      <h1 class="ui header">Configurations</h1>
       <vcl-instagram></vcl-instagram>
     </div>
   </div>

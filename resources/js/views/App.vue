@@ -1,29 +1,35 @@
   
 <template>
-    <div class="ui container">
-        <div class="ui pointing menu">
-            <router-link :to="{ name: 'home' }" :class="[currentPage.includes('home') ? activeClass : 'item']">
-                Home
-            </router-link>
-            <router-link :to="{ name: 'hello' }" :class="[currentPage.includes('hello') ? activeClass : 'item']">
-                Messages
-            </router-link>
-            <router-link :to="{ name: 'friends' }" :class="[currentPage.includes('friends') ? activeClass : 'item']">
-                Friends
-            </router-link>
-            <div class="right menu">
-                <div class="item">
-                <div class="ui transparent icon input">
-                    <input type="text" placeholder="Search...">
-                    <i class="search link icon"></i>
-                </div>
-                </div>
+<div>
+    <div class="ui pointing menu">
+        <div class="ui container">
+            <div class="item">
+                <!-- <img src="" alt="brand"> -->
+                BRAND
             </div>
-        </div>
-        <div class="ui segment">
-            <router-view></router-view>
+            <div class="right menu">
+                <router-link :to="{ name: 'dashboard' }" :class="[currentPage.includes('dashboard') ? activeClass : 'item']">
+                    Dashboard
+                </router-link>
+                <router-link :to="{ name: 'messages' }" :class="[currentPage.includes('messages') ? activeClass : 'item']">
+                    Messages
+                </router-link>
+                <router-link :to="{ name: 'configurations' }" :class="[currentPage.includes('configurations') ? activeClass : 'item']">
+                    Configurations
+                </router-link>
+                <a href="/logout_request" class="item">
+                    <i class="sign-out icon"></i>
+                    Logout
+                </a>
+            </div>
+            
         </div>
     </div>
+    <div class="ui container">
+        <router-view></router-view>
+    </div>
+</div>
+        
 </template>
 <script>
     export default {

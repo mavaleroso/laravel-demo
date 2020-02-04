@@ -14,5 +14,10 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('/login', 'SpaController@login')->name('login');
+Route::post('/login_request', 'SpaController@login_request');
+Route::get('/logout_request', 'SpaController@logout_request');
 
-Route::get('/{any}', 'SpaController@index')->where('any', '.*');
+Route::get('/', 'SpaController@index')->name('dashboard');
+Route::get('/messages', 'SpaController@index')->name('messages');
+Route::get('/configurations', 'SpaController@index')->name('configurations');
